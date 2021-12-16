@@ -36,14 +36,18 @@ git clone https://github.com/gastontab/proyecto-serfe.git
 
 _Open xampp, start apache and my sql services, then go to localhost/phpmyadmin and create a new data base with the name gtbackend._
 
+_In the folder gtbackend folder duplicate the file .env.example and rename it as .env_
+
 _Open terminal in gtbackend folder and run the following commands:_
 ```
+composer install
 php artisan migrate --seed
 php artisan serve (to run server)
 ```
 
 _To run angular server:_
 ```
+npm install
 ng serve --open
 ```
 
