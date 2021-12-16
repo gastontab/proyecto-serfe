@@ -31,7 +31,7 @@ npm install -g @angular/cli
 
 _Clone the project._
 ```
-git clone https://git.serfe.com/temp/test-gaston-taborda.git
+git clone https://github.com/gastontab/proyecto-serfe.git
 ```
 
 _Open xampp, start apache and my sql services, then go to localhost/phpmyadmin and create a new data base with the name gtbackend._
