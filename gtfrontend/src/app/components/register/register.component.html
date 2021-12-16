@@ -1,0 +1,39 @@
+<div class="body">
+    <div class="register">
+        <mat-spinner *ngIf= "loading" diameter="50" class="spinner"></mat-spinner>
+        <form *ngIf= "!loading" [formGroup]= "form" (ngSubmit)= "ingresar()">
+            <img src="../../../assets/img/usuario.png" width="50%">
+            <h1>Sign up</h1>
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Username</mat-label>
+                <input matInput autocomplete="off" type="text" formControlName= "username">
+            </mat-form-field>
+            <div class="email-class">
+                <mat-form-field class="ancho" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput autocomplete="off" type="email" formControlName= "email">
+                </mat-form-field>
+                <p class="help is-danger correo-ocupado" *ngIf= "emailField!.hasError('notAvailable')">
+                    El correo esta ocupado
+                </p>
+            </div>
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput autocomplete="off" type="password" formControlName= "password">
+            </mat-form-field>
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Roll</mat-label>
+                <mat-select formControlName= "roll">
+                  <mat-option value="Student">Student</mat-option>
+                  <mat-option value="Teacher">Teacher</mat-option>
+                </mat-select>
+              </mat-form-field>
+            <br>
+            <button type="submit" mat-raised-button color="primary" class="ancho button">Sign up</button>
+            <br>
+            <div class="newAccount">
+                <span>Have an account? <a class="pointer" (click)= "login()">Log in</a></span>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.login{
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+}
+
+.ancho{
+    width: 80%;
+}
+
+.button{
+    height: 50px;
+}
+
+.spinner{
+    margin: 0 auto;
+}
+
+.newAccount{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.pointer{
+    cursor: pointer;
+    color: blue;
+}

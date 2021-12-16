@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.inputScore{
+  width: 38px;
+  margin-right: 3px;
+}
+
+
+.example-button-container{
+  display: inline;
+  /*width: 120px;*/
+  width: 30px;
+}
+.user{
+  font-size: 15px;
+  color: gray;
+}
