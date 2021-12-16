@@ -45,7 +45,7 @@ php artisan migrate --seed
 php artisan serve (to run server)
 ```
 
-_To run angular server:_
+_In other terminal run angular server (inside the gtfrontend folder):_
 ```
 npm install
 ng serve --open
